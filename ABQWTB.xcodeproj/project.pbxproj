@@ -7,13 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0959791A57CA9D003CB364 /* stops_db in Resources */ = {isa = PBXBuildFile; fileRef = 4B0959781A57CA9D003CB364 /* stops_db */; };
+		4B21FF6C1A89FA08009AF1B1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B21FF6B1A89FA08009AF1B1 /* InfoViewController.swift */; };
+		4B41320F1A60BF3000CF4052 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B41320E1A60BF3000CF4052 /* libGoogleAnalyticsServices.a */; };
+		4B456C411A23BF9200E716F8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B456C401A23BF9200E716F8 /* libsqlite3.dylib */; };
+		4B456C451A23CA6D00E716F8 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B456C441A23CA6D00E716F8 /* DBManager.swift */; };
+		4B4D9FB71A71F5C90059EB7E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4D9FB61A71F5C90059EB7E /* icon.png */; };
+		4B5657E61A8AB94C00A25509 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5657E51A8AB94C00A25509 /* GoogleMaps.framework */; };
+		4B5657E81A8AB9C800A25509 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B5657E71A8AB9C800A25509 /* GoogleMaps.bundle */; };
 		4B7869511A185B6E00B25A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7869501A185B6E00B25A5F /* AppDelegate.swift */; };
-		4B7869531A185B6E00B25A5F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7869521A185B6E00B25A5F /* MasterViewController.swift */; };
-		4B7869551A185B6E00B25A5F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7869541A185B6E00B25A5F /* DetailViewController.swift */; };
+		4B7869551A185B6E00B25A5F /* StopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7869541A185B6E00B25A5F /* StopViewController.swift */; };
 		4B7869581A185B6E00B25A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7869561A185B6E00B25A5F /* Main.storyboard */; };
 		4B78695A1A185B6E00B25A5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7869591A185B6E00B25A5F /* Images.xcassets */; };
 		4B78695D1A185B6E00B25A5F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B78695B1A185B6E00B25A5F /* LaunchScreen.xib */; };
 		4B7869691A185B6E00B25A5F /* ABQWTBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7869681A185B6E00B25A5F /* ABQWTBTests.swift */; };
+		4B79357E1A1ECA670098A767 /* StopsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79357D1A1ECA670098A767 /* StopsMapViewController.swift */; };
+		4BAAF14C1A1D15210073471E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF14B1A1D15210073471E /* CoreData.framework */; };
+		4BAAF14E1A1D15310073471E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF14D1A1D15310073471E /* AVFoundation.framework */; };
+		4BAAF1501A1D224F0073471E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF14F1A1D224F0073471E /* CoreLocation.framework */; };
+		4BAAF1521A1D22800073471E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF1511A1D22800073471E /* CoreText.framework */; };
+		4BAAF1541A1D22880073471E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF1531A1D22880073471E /* GLKit.framework */; };
+		4BAAF1561A1D229A0073471E /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF1551A1D229A0073471E /* ImageIO.framework */; };
+		4BAAF1581A1D22AD0073471E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF1571A1D22AD0073471E /* libc++.dylib */; };
+		4BAAF15A1A1D22BE0073471E /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF1591A1D22BE0073471E /* libicucore.dylib */; };
+		4BAAF15C1A1D22CD0073471E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF15B1A1D22CD0073471E /* libz.dylib */; };
+		4BAAF15E1A1D22DA0073471E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF15D1A1D22DA0073471E /* OpenGLES.framework */; };
+		4BAAF1601A1D22E70073471E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF15F1A1D22E70073471E /* QuartzCore.framework */; };
+		4BAAF1621A1D22F40073471E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAAF1611A1D22F40073471E /* SystemConfiguration.framework */; };
+		4BAAF1971A1D3F940073471E /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BAAF1961A1D3F940073471E /* ic_launcher.png */; };
+		4BCAA3971A2557A400C1A152 /* wtb_logo_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCAA3961A2557A400C1A152 /* wtb_logo_large.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +49,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B0959781A57CA9D003CB364 /* stops_db */ = {isa = PBXFileReference; lastKnownFileType = file; path = stops_db; sourceTree = "<group>"; };
+		4B21FF6B1A89FA08009AF1B1 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		4B4132041A60B9ED00CF4052 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		4B4132051A60B9ED00CF4052 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		4B4132061A60B9ED00CF4052 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		4B4132071A60B9ED00CF4052 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		4B4132081A60B9ED00CF4052 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		4B4132091A60B9ED00CF4052 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		4B41320A1A60B9ED00CF4052 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		4B41320B1A60B9ED00CF4052 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		4B41320C1A60B9ED00CF4052 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		4B41320E1A60BF3000CF4052 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = ../../Downloads/GoogleAnalyticsServicesiOS_3.10/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		4B456C401A23BF9200E716F8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4B456C441A23CA6D00E716F8 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		4B4D9FB61A71F5C90059EB7E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4B5657E51A8AB94C00A25509 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		4B5657E71A8AB9C800A25509 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		4B78694B1A185B6E00B25A5F /* ABQWTB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABQWTB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B78694F1A185B6E00B25A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B7869501A185B6E00B25A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B7869521A185B6E00B25A5F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		4B7869541A185B6E00B25A5F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4B7869541A185B6E00B25A5F /* StopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopViewController.swift; sourceTree = "<group>"; };
 		4B7869571A185B6E00B25A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B7869591A185B6E00B25A5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4B78695C1A185B6E00B25A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4B7869621A185B6E00B25A5F /* ABQWTBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABQWTBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7869671A185B6E00B25A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B7869681A185B6E00B25A5F /* ABQWTBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABQWTBTests.swift; sourceTree = "<group>"; };
+		4B79357D1A1ECA670098A767 /* StopsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsMapViewController.swift; sourceTree = "<group>"; };
+		4BAAF14B1A1D15210073471E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4BAAF14D1A1D15310073471E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4BAAF14F1A1D224F0073471E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4BAAF1511A1D22800073471E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		4BAAF1531A1D22880073471E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		4BAAF1551A1D229A0073471E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		4BAAF1571A1D22AD0073471E /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		4BAAF1591A1D22BE0073471E /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		4BAAF15B1A1D22CD0073471E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4BAAF15D1A1D22DA0073471E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4BAAF15F1A1D22E70073471E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4BAAF1611A1D22F40073471E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4BAAF1651A1D242A0073471E /* ABQWTB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ABQWTB-Bridging-Header.h"; sourceTree = "<group>"; };
+		4BAAF1961A1D3F940073471E /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		4BCAA3961A2557A400C1A152 /* wtb_logo_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wtb_logo_large.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +99,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B41320F1A60BF3000CF4052 /* libGoogleAnalyticsServices.a in Frameworks */,
+				4B456C411A23BF9200E716F8 /* libsqlite3.dylib in Frameworks */,
+				4BAAF1621A1D22F40073471E /* SystemConfiguration.framework in Frameworks */,
+				4BAAF1601A1D22E70073471E /* QuartzCore.framework in Frameworks */,
+				4BAAF15E1A1D22DA0073471E /* OpenGLES.framework in Frameworks */,
+				4BAAF15C1A1D22CD0073471E /* libz.dylib in Frameworks */,
+				4BAAF15A1A1D22BE0073471E /* libicucore.dylib in Frameworks */,
+				4BAAF1581A1D22AD0073471E /* libc++.dylib in Frameworks */,
+				4BAAF1561A1D229A0073471E /* ImageIO.framework in Frameworks */,
+				4BAAF1541A1D22880073471E /* GLKit.framework in Frameworks */,
+				4BAAF1521A1D22800073471E /* CoreText.framework in Frameworks */,
+				4BAAF1501A1D224F0073471E /* CoreLocation.framework in Frameworks */,
+				4BAAF14E1A1D15310073471E /* AVFoundation.framework in Frameworks */,
+				4BAAF14C1A1D15210073471E /* CoreData.framework in Frameworks */,
+				4B5657E61A8AB94C00A25509 /* GoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +130,28 @@
 		4B7869421A185B6E00B25A5F = {
 			isa = PBXGroup;
 			children = (
+				4B5657E71A8AB9C800A25509 /* GoogleMaps.bundle */,
+				4B5657E51A8AB94C00A25509 /* GoogleMaps.framework */,
+				4B41320E1A60BF3000CF4052 /* libGoogleAnalyticsServices.a */,
+				4B0959781A57CA9D003CB364 /* stops_db */,
+				4B456C401A23BF9200E716F8 /* libsqlite3.dylib */,
+				4BAAF1611A1D22F40073471E /* SystemConfiguration.framework */,
+				4BAAF15F1A1D22E70073471E /* QuartzCore.framework */,
+				4BAAF15D1A1D22DA0073471E /* OpenGLES.framework */,
+				4BAAF15B1A1D22CD0073471E /* libz.dylib */,
+				4BAAF1591A1D22BE0073471E /* libicucore.dylib */,
+				4BAAF1571A1D22AD0073471E /* libc++.dylib */,
+				4BAAF1551A1D229A0073471E /* ImageIO.framework */,
+				4BAAF1531A1D22880073471E /* GLKit.framework */,
+				4BAAF1511A1D22800073471E /* CoreText.framework */,
+				4BAAF14F1A1D224F0073471E /* CoreLocation.framework */,
+				4BAAF14D1A1D15310073471E /* AVFoundation.framework */,
+				4BAAF14B1A1D15210073471E /* CoreData.framework */,
 				4B78694D1A185B6E00B25A5F /* ABQWTB */,
 				4B7869651A185B6E00B25A5F /* ABQWTBTests */,
 				4B78694C1A185B6E00B25A5F /* Products */,
+				4BAAF1651A1D242A0073471E /* ABQWTB-Bridging-Header.h */,
+				4BAAF1961A1D3F940073471E /* ic_launcher.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +167,26 @@
 		4B78694D1A185B6E00B25A5F /* ABQWTB */ = {
 			isa = PBXGroup;
 			children = (
+				4B4D9FB61A71F5C90059EB7E /* icon.png */,
+				4B4132041A60B9ED00CF4052 /* GAI.h */,
+				4B4132051A60B9ED00CF4052 /* GAIDictionaryBuilder.h */,
+				4B4132061A60B9ED00CF4052 /* GAIEcommerceProduct.h */,
+				4B4132071A60B9ED00CF4052 /* GAIEcommerceProductAction.h */,
+				4B4132081A60B9ED00CF4052 /* GAIEcommercePromotion.h */,
+				4B4132091A60B9ED00CF4052 /* GAIFields.h */,
+				4B41320A1A60B9ED00CF4052 /* GAILogger.h */,
+				4B41320B1A60B9ED00CF4052 /* GAITrackedViewController.h */,
+				4B41320C1A60B9ED00CF4052 /* GAITracker.h */,
 				4B7869501A185B6E00B25A5F /* AppDelegate.swift */,
-				4B7869521A185B6E00B25A5F /* MasterViewController.swift */,
-				4B7869541A185B6E00B25A5F /* DetailViewController.swift */,
+				4B7869541A185B6E00B25A5F /* StopViewController.swift */,
 				4B7869561A185B6E00B25A5F /* Main.storyboard */,
+				4B79357D1A1ECA670098A767 /* StopsMapViewController.swift */,
+				4B21FF6B1A89FA08009AF1B1 /* InfoViewController.swift */,
 				4B7869591A185B6E00B25A5F /* Images.xcassets */,
 				4B78695B1A185B6E00B25A5F /* LaunchScreen.xib */,
+				4BCAA3961A2557A400C1A152 /* wtb_logo_large.png */,
 				4B78694E1A185B6E00B25A5F /* Supporting Files */,
+				4B456C441A23CA6D00E716F8 /* DBManager.swift */,
 			);
 			path = ABQWTB;
 			sourceTree = "<group>";
@@ -164,6 +265,7 @@
 				TargetAttributes = {
 					4B78694A1A185B6E00B25A5F = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = WAY2EB224Y;
 					};
 					4B7869611A185B6E00B25A5F = {
 						CreatedOnToolsVersion = 6.1;
@@ -197,7 +299,12 @@
 			files = (
 				4B7869581A185B6E00B25A5F /* Main.storyboard in Resources */,
 				4B78695D1A185B6E00B25A5F /* LaunchScreen.xib in Resources */,
+				4BCAA3971A2557A400C1A152 /* wtb_logo_large.png in Resources */,
+				4B0959791A57CA9D003CB364 /* stops_db in Resources */,
 				4B78695A1A185B6E00B25A5F /* Images.xcassets in Resources */,
+				4BAAF1971A1D3F940073471E /* ic_launcher.png in Resources */,
+				4B4D9FB71A71F5C90059EB7E /* icon.png in Resources */,
+				4B5657E81A8AB9C800A25509 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B7869551A185B6E00B25A5F /* DetailViewController.swift in Sources */,
-				4B7869531A185B6E00B25A5F /* MasterViewController.swift in Sources */,
+				4B456C451A23CA6D00E716F8 /* DBManager.swift in Sources */,
+				4B79357E1A1ECA670098A767 /* StopsMapViewController.swift in Sources */,
+				4B7869551A185B6E00B25A5F /* StopViewController.swift in Sources */,
 				4B7869511A185B6E00B25A5F /* AppDelegate.swift in Sources */,
+				4B21FF6C1A89FA08009AF1B1 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +451,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/cfhughes/Downloads/GoogleMaps-iOS-1.9.0",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ABQWTB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cfhughes/Downloads/GoogleAnalyticsServicesiOS_3.10,
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ABQWTB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -352,9 +477,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/cfhughes/Downloads/GoogleMaps-iOS-1.9.0",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ABQWTB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cfhughes/Downloads/GoogleAnalyticsServicesiOS_3.10,
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ABQWTB-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -411,6 +551,7 @@
 				4B78696E1A185B6E00B25A5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B78696F1A185B6E00B25A5F /* Build configuration list for PBXNativeTarget "ABQWTBTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +560,7 @@
 				4B7869711A185B6E00B25A5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

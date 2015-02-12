@@ -12,15 +12,33 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
+    
+    let googleMapsApiKey = "AIzaSyAwSujLKGCfS2vjeHaW1lFWnvi_8IMVr8o"
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let splitViewController = self.window!.rootViewController as UISplitViewController
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as UINavigationController
-        navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
-        splitViewController.delegate = self
+        GAI.sharedInstance().trackUncaughtExceptions = true
+        GAI.sharedInstance().trackerWithTrackingId("UA-410552-13")
+        
+        GMSServices.provideAPIKey(googleMapsApiKey)
+        
+        copyFile()
+        
         return true
+    }
+    
+    func copyFile() {
+        var dbPath: NSString = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        dbPath = dbPath.stringByAppendingPathComponent("/stops_db4")
+        
+        var fileManager = NSFileManager.defaultManager()
+        if !fileManager.fileExistsAtPath(dbPath) {
+            var fromPath: NSString = NSBundle.mainBundle().resourcePath!.stringByAppendingPathComponent("stops_db")
+            fileManager.copyItemAtPath(fromPath, toPath: dbPath, error: nil)
+        }
+        
+        DBManager.open(dbPath)
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -43,20 +61,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-    // MARK: - Split view
-
-    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController!, ontoPrimaryViewController primaryViewController:UIViewController!) -> Bool {
-        if let secondaryAsNavController = secondaryViewController as? UINavigationController {
-            if let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController {
-                if topAsDetailController.detailItem == nil {
-                    // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
-                    return true
-                }
-            }
-        }
-        return false
     }
 
 }
