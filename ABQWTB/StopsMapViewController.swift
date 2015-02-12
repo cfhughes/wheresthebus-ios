@@ -12,10 +12,12 @@ class StopsMapViewController : GAITrackedViewController,GMSMapViewDelegate {
     
     var selected:Int?
     let locationmgr = CLLocationManager()
+    var mapView:GMSMapView?
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.screenName = "StopsMapiOS"
+        mapView!.addObserver(self, forKeyPath: "myLocation", options: NSKeyValueObservingOptions.allZeros, context: nil)
     }
     
     override func viewDidLoad() {
@@ -27,21 +29,31 @@ class StopsMapViewController : GAITrackedViewController,GMSMapViewDelegate {
 
         var camera = GMSCameraPosition.cameraWithLatitude(35.0827,longitude:-106.6483, zoom:17)
         
-        var mapView = GMSMapView.mapWithFrame(CGRectZero, camera:camera)
+        mapView = GMSMapView.mapWithFrame(CGRectZero, camera:camera)
         
-        
-        
-        mapView.settings.myLocationButton = true
-        mapView.settings.rotateGestures = false
-        mapView.settings.tiltGestures = false
+        mapView!.settings.myLocationButton = true
+        mapView!.settings.rotateGestures = false
+        mapView!.settings.tiltGestures = false
         //mapView.mapType = kGMSTypeHybrid;
-        mapView.delegate = self
+        mapView!.delegate = self
         
         self.view = mapView
         
-        mapView.myLocationEnabled = true
+        mapView!.myLocationEnabled = true
         
         
+    }
+    
+    
+    override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
+        if (keyPath == "myLocation"){
+            mapView?.removeObserver(self, forKeyPath: "myLocation")
+            let location = object.myLocation
+            
+            let update = GMSCameraUpdate.setTarget(location!.coordinate)
+            
+            mapView?.moveCamera(update)
+        }
     }
     
     func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {

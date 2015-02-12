@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,33 +11,62 @@
             <rect key="frame" x="0.0" y="0.0" width="481" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="wtb_logo_large.png" translatesAutoresizingMaskIntoConstraints="NO" id="oJA-Tn-RNI">
-                    <rect key="frame" x="-272" y="197" width="1025" height="1024"/>
-                </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ABQ Where's The Bus?" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="103" width="440" height="43"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ABQ Where's The Bus?" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000007" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                    <rect key="frame" x="30" y="167" width="421" height="43"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="43" id="8Hb-jG-4qg"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="8Hb-jG-4qg"/>
+                        </mask>
+                    </variation>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="wtb_logo_large.png" translatesAutoresizingMaskIntoConstraints="NO" id="oJA-Tn-RNI">
+                    <rect key="frame" x="30" y="241" width="421" height="376"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="376" id="1az-WD-hEa"/>
+                        <constraint firstAttribute="height" priority="250" constant="376" id="Ci1-Uj-A1c"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ci1-Uj-A1c"/>
+                        </mask>
+                    </variation>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="oJA-Tn-RNI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Gkk-0e-JlI"/>
-                <constraint firstAttribute="bottom" secondItem="oJA-Tn-RNI" secondAttribute="bottom" constant="50" id="YfM-Ta-dZI"/>
-                <constraint firstItem="oJA-Tn-RNI" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="51" id="brP-Fy-RZV"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="103" id="dNr-PX-e0R"/>
-                <constraint firstItem="oJA-Tn-RNI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="f8a-bH-9VY"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="fXh-J2-Mgf"/>
-                <constraint firstAttribute="centerX" secondItem="oJA-Tn-RNI" secondAttribute="centerX" id="jSb-e0-Ggd"/>
-                <constraint firstAttribute="trailing" secondItem="oJA-Tn-RNI" secondAttribute="trailing" constant="20" id="q8h-GY-wH5"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1x4-ug-q80"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oJA-Tn-RNI" secondAttribute="bottom" constant="50" id="9DS-O2-UGJ"/>
+                <constraint firstItem="oJA-Tn-RNI" firstAttribute="leading" secondItem="kId-c2-rCX" secondAttribute="leading" placeholder="YES" id="AJb-Hz-UhZ"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="Ff8-C7-NVR"/>
+                <constraint firstAttribute="centerX" secondItem="oJA-Tn-RNI" secondAttribute="centerX" id="Got-z3-0xl"/>
+                <constraint firstItem="oJA-Tn-RNI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="152" id="O1E-hy-Ghd"/>
+                <constraint firstItem="oJA-Tn-RNI" firstAttribute="trailing" secondItem="kId-c2-rCX" secondAttribute="trailing" id="PDi-Ox-PUW"/>
+                <constraint firstItem="oJA-Tn-RNI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="WBJ-sD-5Qr"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oJA-Tn-RNI" secondAttribute="bottom" priority="250" constant="50" id="YfM-Ta-dZI"/>
+                <constraint firstItem="oJA-Tn-RNI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="250" constant="50" id="f8a-bH-9VY"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="78" id="fpR-0N-u4B"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oJA-Tn-RNI" secondAttribute="trailing" constant="30" id="pd2-pl-UlI"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="centerX" secondItem="oJA-Tn-RNI" secondAttribute="centerX" id="rQx-o4-nwl"/>
+                <constraint firstItem="oJA-Tn-RNI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="31" id="xhr-NX-Ywa"/>
+                <constraint firstItem="oJA-Tn-RNI" firstAttribute="leading" secondItem="kId-c2-rCX" secondAttribute="leading" id="zy9-RR-i8Q"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="rQx-o4-nwl"/>
+                    <exclude reference="AJb-Hz-UhZ"/>
+                    <exclude reference="PDi-Ox-PUW"/>
+                    <exclude reference="YfM-Ta-dZI"/>
+                    <exclude reference="f8a-bH-9VY"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="548.5" y="548.5"/>
         </view>
     </objects>

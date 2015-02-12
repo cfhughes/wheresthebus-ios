@@ -21,8 +21,6 @@ class StopViewController: GAITrackedViewController,UITableViewDelegate,UITableVi
     
     let base_url = "http://abqwtb.com/android.php"
     
-    let schedule_table = UITableView()
-    
     let dateReader = NSDateFormatter()
     let dateWriter = NSDateFormatter()
     
@@ -34,11 +32,13 @@ class StopViewController: GAITrackedViewController,UITableViewDelegate,UITableVi
         dateWriter.locale = locale
         dateReader.dateFormat = "HH:mm:ss"
         dateWriter.dateFormat = "h:mm a"
+        
+        tableView.rowHeight = 32
     }
     
     
     override func viewDidLoad() {
-        schedule_table.registerClass(UITableViewCell.self, forCellReuseIdentifier: "schedulecell")
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "schedulecell")
         
         
         let url = NSURL(string: "\(base_url)?stop_id=\(stopID)&version=7")
@@ -64,8 +64,8 @@ class StopViewController: GAITrackedViewController,UITableViewDelegate,UITableVi
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = schedule_table.dequeueReusableCellWithIdentifier("schedulecell") as UITableViewCell
+    func tableView(tableView1: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("schedulecell") as UITableViewCell
         if (rows[indexPath.row].rangeOfString("No More Stops Today") != nil){
             cell.textLabel?.text = "No More Stops Today"
         }else{
